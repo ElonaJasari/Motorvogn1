@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motorvogn</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Motorvognregister</h1>
+<table>
+    <tr>
+        <td>Eiers personnummer</td>
+        <td>Eiers navn</td>
+        <td>Eiers adresse</td>
+    </tr>
+    <tr>
+        <td><label for="personnr"></label><input type="text" id="personnr"/></td>
+        <td><label for="navn"></label><input type="text" id="navn"/></td>
+        <td><label for="adresse"></label><input type="text" id="adresse"/></td>
+    </tr>
+    <tr>
+        <td>Kjennetegn</td>
+        <td>Bilmerke</td>
+        <td>Biltype</td>
+    </tr>
+    <tr>
+        <td><label for="kjennetegn"></label><input type="text" id="kjennetegn"/></td>
+        <td><label for="bilmerke"></label><input type="text" id="bilmerke"/></td>
+        <td><label for ="biltype"></label><input type="text" id="biltype"/></td>
+    </tr>
+</table>
+
+<button onclick="register()">Registrer</button>
+
+<h4>Alle bilene:</h4>
+<div id="alleBiler"></div>
+
+<button onclick="slettAlleBiler()">Slett alle</button>
+
+<script src="validering.js"></script>
+</body>
+</html>
